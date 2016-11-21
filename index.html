@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Server Management</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/reset.css" rel="stylesheet" type="text/css">
+    <link href="css/layout.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/sweetalert2.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/sweetalert2.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <!-- for IE support on sweetalert-->
+    <script src="https://cdn.jsdelivr.net/es6-promise/latest/es6-promise.min.js"></script>
+</head>
+
+<body>
+    <div class="wrap ethan-reset ethan-bootstrap">
+        <!-- ================ add btn ================ -->
+        <button class="Add">Add Server</button>
+        <!-- ================ form head ================ -->
+        <div class="titlename">
+            <ul>
+                <li class="OU_Name">Server Name</li>
+                <li class="Group_Name">Detail</li>
+                <li class="Server_Qty">Count</li>
+                <li class="Status">Status</li>
+                <li class="Power_Action">Power Action</li>
+                <li class="Schedule_Setting">Schedule</li>
+                <li class="Group_Setting">Server Setting</li>
+            </ul>
+        </div>
+        <!-- ================ accordion ================ -->
+        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingOne">
+                    <h4 class="panel-title">
+                     <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                     <i class="fa fa-minus" aria-hidden="true"></i></a>
+                    </h4>
+                    <ul>
+                        <li class="OU_Name">Server Name 01</li>
+                        <li class="Group_Name">Lorem ipsum dolor sit amet.</li>
+                        <li class="Server_Qty">2</li>
+                        <li class="Status">
+                            <div class="SwitchBtn">
+                                <div class="Sw_On">
+                                    <div class="Switch SwitchOn" title="Enable"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <div class="handler handler_On"></div>
+                                    </div>
+                                </div>
+                                <div class="Sw_Off">
+                                    <div class="Switch SwitchOff" title="Disable"><i class="fa fa-times" aria-hidden="true"></i>
+                                        <div class="handler handler_Off"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="Power_Action">
+                            <i class="fa fa-power-off PowerOn" aria-hidden="true" title="Power On"></i>
+                            <i class="fa fa-power-off PowerOff" aria-hidden="true" title="Power Off"></i></li>
+                        <li class="Schedule_Setting AddSchedule EditSchedule" title="Add Schedule"></li>
+                        <li class="Group_Setting">
+                            <i class="fa fa-pencil" aria-hidden="true" title="Edit Group"></i>
+                            <i class="fa fa-trash-o" aria-hidden="true" title="Delete Group"></i>
+                        </li>
+                    </ul>
+                </div>
+                <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                    <div class="panel-body">
+                        <!--  ============= panel-body =============== -->
+                        <div class="table table_02">
+                            <h2>Sub Members </h2>
+                            <div class="BOX">
+                                <div class="topnote">
+                                    <i class="fa fa-refresh" aria-hidden="true"></i>
+                                    <figure>Total:3</figure>
+                                </div>
+                                <ul class="title">
+                                    <li class="fourcolumn">Server Name</li>
+                                    <li class="fourcolumn">Startup Delay(sec)</li>
+                                    <li class="fourcolumn">Shutdown Delay (sec)</li>
+                                    <li class="fourcolumn">Startup Sequence</li>
+                                </ul>
+                                <div class="cover">
+                                    <ul>
+                                        <li>
+                                            <div class="Server_Name">Sub Server Name 01</div>
+                                            <div class="Startup_Delay">120</div>
+                                            <div class="Shutdown_Delay">5</div>
+                                            <div class="Startup_Sequence">1</div>
+                                        </li>
+                                        <li>
+                                            <div class="Server_Name">Sub Server Name 02</div>
+                                            <div class="Startup_Delay">120</div>
+                                            <div class="Shutdown_Delay">5</div>
+                                            <div class="Startup_Sequence">2</div>
+                                        </li>
+                                        <li>
+                                            <div class="Server_Name">Sub Server Name 03</div>
+                                            <div class="Startup_Delay">120</div>
+                                            <div class="Shutdown_Delay">5</div>
+                                            <div class="Startup_Sequence">3</div>
+                                        </li>
+                                        <li>
+                                            <div class="Server_Name">Sub Server Name 04</div>
+                                            <div class="Startup_Delay">120</div>
+                                            <div class="Shutdown_Delay">5</div>
+                                            <div class="Startup_Sequence">4</div>
+                                        </li>
+                                        <li>
+                                            <div class="Server_Name">Sub Server Name 05</div>
+                                            <div class="Startup_Delay">120</div>
+                                            <div class="Shutdown_Delay">5</div>
+                                            <div class="Startup_Sequence">5</div>
+                                        </li>
+                                        <li>
+                                            <div class="Server_Name">Sub Server Name 06</div>
+                                            <div class="Startup_Delay">120</div>
+                                            <div class="Shutdown_Delay">5</div>
+                                            <div class="Startup_Sequence">6</div>
+                                        </li>
+                                        <li>
+                                            <div class="Server_Name">Sub Server Name 07</div>
+                                            <div class="Startup_Delay">120</div>
+                                            <div class="Shutdown_Delay">5</div>
+                                            <div class="Startup_Sequence">7</div>
+                                        </li>
+                                        <li>
+                                            <div class="Server_Name">Sub Server Name 08</div>
+                                            <div class="Startup_Delay">120</div>
+                                            <div class="Shutdown_Delay">5</div>
+                                            <div class="Startup_Sequence">8</div>
+                                        </li>
+                                        <li>
+                                            <div class="Server_Name">Sub Server Name 09</div>
+                                            <div class="Startup_Delay">120</div>
+                                            <div class="Shutdown_Delay">5</div>
+                                            <div class="Startup_Sequence">9</div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="table table_01">
+                            <h2>Schedule</h2>
+                            <div class="BOX">
+                                <div class="topnote">
+                                    <i class="fa fa-refresh" aria-hidden="true"></i>
+                                </div>
+                                <ul class="title">
+                                    <li class="threecolumn">Day</li>
+                                    <li class="threecolumn">Time</li>
+                                    <li class="threecolumn">Power</li>
+                                </ul>
+                                <div class="cover">
+                                    <ul>
+                                        <li>
+                                            <div class="day-sheet">Monday</div>
+                                            <div class="time-sheet">15:30</div>
+                                            <div class="power-sheet">Off</div>
+                                        </li>
+                                        <li>
+                                            <div class="day-sheet">Monday</div>
+                                            <div class="time-sheet">15:30</div>
+                                            <div class="power-sheet">Off</div>
+                                        </li>
+                                        <li>
+                                            <div class="day-sheet">Monday</div>
+                                            <div class="time-sheet">15:30</div>
+                                            <div class="power-sheet">Off</div>
+                                        </li>
+                                        <li>
+                                            <div class="day-sheet">Monday</div>
+                                            <div class="time-sheet">15:30</div>
+                                            <div class="power-sheet">Off</div>
+                                        </li>
+                                        <li>
+                                            <div class="day-sheet">Monday</div>
+                                            <div class="time-sheet">15:30</div>
+                                            <div class="power-sheet">Off</div>
+                                        </li>
+                                        <li>
+                                            <div class="day-sheet">Monday</div>
+                                            <div class="time-sheet">15:30</div>
+                                            <div class="power-sheet">Off</div>
+                                        </li>
+                                        <li>
+                                            <div class="day-sheet">Monday</div>
+                                            <div class="time-sheet">15:30</div>
+                                            <div class="power-sheet">Off</div>
+                                        </li>
+                                        <li>
+                                            <div class="day-sheet">Monday</div>
+                                            <div class="time-sheet">15:30</div>
+                                            <div class="power-sheet">Off</div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!--  ============= panel-body end=============== -->
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingTwo">
+                    <h4 class="panel-title">
+                     <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                     <i class="fa fa-plus" aria-hidden="true"></i></a>
+                    </h4>
+                    <ul class="head_info">
+                        <li class="OU_Name">Server Name 02</li>
+                        <li class="Group_Name TextLeft">Lorem ipsum dolor sit amet, consectetur.</li>
+                        <li class="Server_Qty">2</li>
+                        <li class="Status">
+                            <div class="SwitchBtn">
+                                <div class="Sw_On">
+                                    <div class="Switch SwitchOn" title="Enable"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <div class="handler handler_On"></div>
+                                    </div>
+                                </div>
+                                <div class="Sw_Off">
+                                    <div class="Switch SwitchOff" title="Disable"><i class="fa fa-times" aria-hidden="true"></i>
+                                        <div class="handler handler_Off"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="Power_Action">
+                            <i class="fa fa-power-off PowerOn" aria-hidden="true" title="Power On"></i>
+                            <i class="fa fa-power-off PowerOff" aria-hidden="true" title="Power Off"></i></li>
+                        <li class="Schedule_Setting AddSchedule" title="Add Schedule"></li>
+                        <li class="Group_Setting">
+                            <i class="fa fa-pencil" aria-hidden="true" title="Edit Group"></i>
+                            <i class="fa fa-trash-o" aria-hidden="true" title="Delete Group"></i>
+                        </li>
+                    </ul>
+                </div>
+                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                    <div class="panel-body">
+                        <!--  ============= panel-body =============== -->
+                        <div class="table table_02 loader mg-loading">
+                            <div class="load"></div>
+                        </div>
+                        <div class="table table_01 loader mg-loading">
+                            <div class="load"></div>
+                        </div>
+                        <!--  ============= panel-body end=============== -->
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingThree">
+                    <h4 class="panel-title">
+                     <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                     <i class="fa fa-plus" aria-hidden="true"></i></a>
+                    </h4>
+                    <ul class="head_info">
+                        <li class="OU_Name">Server Name 03</li>
+                        <li class="Group_Name TextLeft">Lorem ipsum dolor.</li>
+                        <li class="Server_Qty">2</li>
+                        <li class="Status">
+                            <div class="SwitchBtn">
+                                <div class="Sw_On">
+                                    <div class="Switch SwitchOn" title="Enable"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <div class="handler handler_On"></div>
+                                    </div>
+                                </div>
+                                <div class="Sw_Off">
+                                    <div class="Switch SwitchOff" title="Disable"><i class="fa fa-times" aria-hidden="true"></i>
+                                        <div class="handler handler_Off"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="Power_Action">
+                            <i class="fa fa-power-off PowerOn" aria-hidden="true" title="Power On"></i>
+                            <i class="fa fa-power-off PowerOff" aria-hidden="true" title="Power Off"></i></li>
+                        <li class="Schedule_Setting AddSchedule" title="Add Schedule"></li>
+                        <li class="Group_Setting">
+                            <i class="fa fa-pencil" aria-hidden="true" title="Edit Group"></i>
+                            <i class="fa fa-trash-o" aria-hidden="true" title="Delete Group"></i>
+                        </li>
+                    </ul>
+                </div>
+                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                    <div class="panel-body">
+                        <!--  ============= panel-body =============== -->
+                        <div class="table table_02 loader mg-updating">
+                            <div class="load"></div>
+                            <h2>Sub Members </h2>
+                            <div class="BOX blur">
+                                <div class="topnote">
+                                    <i class="fa fa-refresh" aria-hidden="true"></i>
+                                    <figure>Total:3</figure>
+                                </div>
+                                <ul class="title">
+                                    <li class="fourcolumn">Server Name</li>
+                                    <li class="fourcolumn">Startup Delay(sec)</li>
+                                    <li class="fourcolumn">Shutdown Delay (sec)</li>
+                                    <li class="fourcolumn">Startup Sequence</li>
+                                </ul>
+                                <div class="cover">
+                                    <ul>
+                                        <li>
+                                            <div class="Server_Name">Sub Server Name 01</div>
+                                            <div class="Startup_Delay">120</div>
+                                            <div class="Shutdown_Delay">5</div>
+                                            <div class="Startup_Sequence">1</div>
+                                        </li>
+                                        <li>
+                                            <div class="Server_Name">Sub Server Name 02</div>
+                                            <div class="Startup_Delay">120</div>
+                                            <div class="Shutdown_Delay">5</div>
+                                            <div class="Startup_Sequence">2</div>
+                                        </li>
+                                        <li>
+                                            <div class="Server_Name">Sub Server Name 03</div>
+                                            <div class="Startup_Delay">120</div>
+                                            <div class="Shutdown_Delay">5</div>
+                                            <div class="Startup_Sequence">3</div>
+                                        </li>
+                                        <li>
+                                            <div class="Server_Name">Sub Server Name 04</div>
+                                            <div class="Startup_Delay">120</div>
+                                            <div class="Shutdown_Delay">5</div>
+                                            <div class="Startup_Sequence">4</div>
+                                        </li>
+                                        <li>
+                                            <div class="Server_Name">Sub Server Name 05</div>
+                                            <div class="Startup_Delay">120</div>
+                                            <div class="Shutdown_Delay">5</div>
+                                            <div class="Startup_Sequence">5</div>
+                                        </li>
+                                        <li>
+                                            <div class="Server_Name">Sub Server Name 06</div>
+                                            <div class="Startup_Delay">120</div>
+                                            <div class="Shutdown_Delay">5</div>
+                                            <div class="Startup_Sequence">6</div>
+                                        </li>
+                                        <li>
+                                            <div class="Server_Name">Sub Server Name 07</div>
+                                            <div class="Startup_Delay">120</div>
+                                            <div class="Shutdown_Delay">5</div>
+                                            <div class="Startup_Sequence">7</div>
+                                        </li>
+                                        <li>
+                                            <div class="Server_Name">Sub Server Name 08</div>
+                                            <div class="Startup_Delay">120</div>
+                                            <div class="Shutdown_Delay">5</div>
+                                            <div class="Startup_Sequence">8</div>
+                                        </li>
+                                        <li>
+                                            <div class="Server_Name">Sub Server Name 09</div>
+                                            <div class="Startup_Delay">120</div>
+                                            <div class="Shutdown_Delay">5</div>
+                                            <div class="Startup_Sequence">9</div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="table table_01 loader mg-updating">
+                            <div class="load"></div>
+                            <h2>Schedule</h2>
+                            <div class="BOX blur">
+                                <div class="topnote">
+                                    <i class="fa fa-refresh" aria-hidden="true"></i>
+                                </div>
+                                <ul class="title">
+                                    <li class="threecolumn">Day</li>
+                                    <li class="threecolumn">Time</li>
+                                    <li class="threecolumn">Power</li>
+                                </ul>
+                                <div class="cover">
+                                    <ul>
+                                        <li>
+                                            <div class="day-sheet">Monday</div>
+                                            <div class="time-sheet">15:30</div>
+                                            <div class="power-sheet">Off</div>
+                                        </li>
+                                        <li>
+                                            <div class="day-sheet">Monday</div>
+                                            <div class="time-sheet">15:30</div>
+                                            <div class="power-sheet">Off</div>
+                                        </li>
+                                        <li>
+                                            <div class="day-sheet">Monday</div>
+                                            <div class="time-sheet">15:30</div>
+                                            <div class="power-sheet">Off</div>
+                                        </li>
+                                        <li>
+                                            <div class="day-sheet">Monday</div>
+                                            <div class="time-sheet">15:30</div>
+                                            <div class="power-sheet">Off</div>
+                                        </li>
+                                        <li>
+                                            <div class="day-sheet">Monday</div>
+                                            <div class="time-sheet">15:30</div>
+                                            <div class="power-sheet">Off</div>
+                                        </li>
+                                        <li>
+                                            <div class="day-sheet">Monday</div>
+                                            <div class="time-sheet">15:30</div>
+                                            <div class="power-sheet">Off</div>
+                                        </li>
+                                        <li>
+                                            <div class="day-sheet">Monday</div>
+                                            <div class="time-sheet">15:30</div>
+                                            <div class="power-sheet">Off</div>
+                                        </li>
+                                        <li>
+                                            <div class="day-sheet">Monday</div>
+                                            <div class="time-sheet">15:30</div>
+                                            <div class="power-sheet">Off</div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!--  ============= panel-body end=============== -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

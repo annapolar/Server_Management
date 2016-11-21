@@ -1,0 +1,15 @@
+.ethan-reset * { box-sizing: border-box; }
+.ethan-reset a { text-decoration: none; }
+.ethan-reset a:hover { text-decoration: none; }
+.ethan-reset button:focus { outline: none; }
+.ethan-reset html, .ethan-reset body, .ethan-reset div, .ethan-reset span, .ethan-reset applet, .ethan-reset object, .ethan-reset iframe, .ethan-reset h1, .ethan-reset h2, .ethan-reset h3, .ethan-reset h4, .ethan-reset h5, .ethan-reset h6, .ethan-reset p, .ethan-reset blockquote, .ethan-reset pre, .ethan-reset a, .ethan-reset abbr, .ethan-reset acronym, .ethan-reset address, .ethan-reset big, .ethan-reset cite, .ethan-reset code, .ethan-reset del, .ethan-reset dfn, .ethan-reset em, .ethan-reset img, .ethan-reset ins, .ethan-reset kbd, .ethan-reset q, .ethan-reset s, .ethan-reset samp, .ethan-reset small, .ethan-reset strike, .ethan-reset strong, .ethan-reset sub, .ethan-reset sup, .ethan-reset tt, .ethan-reset var, .ethan-reset b, .ethan-reset u, .ethan-reset i, .ethan-reset center, .ethan-reset dl, .ethan-reset dt, .ethan-reset dd, .ethan-reset ol, .ethan-reset ul, .ethan-reset li, .ethan-reset fieldset, .ethan-reset form, .ethan-reset label, .ethan-reset legend, .ethan-reset table, .ethan-reset caption, .ethan-reset tbody, .ethan-reset tfoot, .ethan-reset thead, .ethan-reset tr, .ethan-reset th, .ethan-reset td, .ethan-reset article, .ethan-reset aside, .ethan-reset canvas, .ethan-reset details, .ethan-reset embed, .ethan-reset figure, .ethan-reset figcaption, .ethan-reset footer, .ethan-reset header, .ethan-reset hgroup, .ethan-reset menu, .ethan-reset nav, .ethan-reset output, .ethan-reset ruby, .ethan-reset section, .ethan-reset summary, .ethan-reset time, .ethan-reset mark, .ethan-reset audio, .ethan-reset video { margin: 0; padding: 0; border: 0; vertical-align: baseline; }
+.ethan-reset html { line-height: 1; }
+.ethan-reset ol, .ethan-reset ul { list-style: none; }
+.ethan-reset table { border-collapse: collapse; border-spacing: 0; }
+.ethan-reset caption, .ethan-reset th, .ethan-reset td { text-align: left; font-weight: normal; vertical-align: middle; }
+.ethan-reset q, .ethan-reset blockquote { quotes: none; }
+.ethan-reset q:before, .ethan-reset q:after, .ethan-reset blockquote:before, .ethan-reset blockquote:after { content: ""; content: none; }
+.ethan-reset a img { border: none; }
+.ethan-reset article, .ethan-reset aside, .ethan-reset details, .ethan-reset figcaption, .ethan-reset figure, .ethan-reset footer, .ethan-reset header, .ethan-reset hgroup, .ethan-reset main, .ethan-reset menu, .ethan-reset nav, .ethan-reset section, .ethan-reset summary { display: block; }
+
+/*# sourceMappingURL=ethan_reset.css.map */

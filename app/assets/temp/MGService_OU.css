@@ -1,0 +1,101 @@
+@font-face { font-family: Lato; src: url("../fonts/Lato-Regular.ttf"); }
+.MGService_OU_wrap .titlename ul, .MGService_OU_wrap .load_wrap, .MGService_OU_wrap .panel-group .panel .panel-heading ul, .MGService_OU_wrap .panel-group .panel .panel-heading ul li { display: flex; align-items: center; justify-content: center; }
+
+/*-------------color style-------------*/
+/*---------------------------------------------------------------------------------*/
+.MGService_OU_wrap { width: 100%; max-width: 1156px; min-width: 760px; background-color: #e9edf5; padding: 10px 20px; }
+.MGService_OU_wrap .AddGroup { width: 188px; height: 35px; border: none; border-radius: 3px; background-color: #98cb60; box-shadow: 0 4px #84b450; color: #fff; margin-bottom: 10px; font-family: Lato; font-size: 14px; }
+.MGService_OU_wrap .AddGroup:active { transform: translate(0, 3px); box-shadow: 0 1px #84b450; }
+.MGService_OU_wrap .titlename { width: 100%; background-color: #fff; border: 1px solid #e2e7e7; }
+.MGService_OU_wrap .titlename ul { padding-left: 50px; width: 100%; overflow: hidden; padding: 12px 0 15px 50px; }
+.MGService_OU_wrap .titlename ul li { float: left; font-size: 13px; font-family: Lato; color: #558490; text-align: center; line-height: 1.2; }
+.MGService_OU_wrap .load_wrap { width: 100%; height: 200px; background-color: #fff; }
+.MGService_OU_wrap .load_wrap .load_center { width: 100px; height: 100px; background: url("../images/loading.gif") center center no-repeat; }
+.MGService_OU_wrap .panel-group { border-radius: 0px; }
+.MGService_OU_wrap .panel-group .panel { background-color: #e9edf5; border: 0px solid transparent; margin-top: 0px; }
+.MGService_OU_wrap .panel-group .panel:nth-child(even) > .panel-heading { background-color: #f9fafc; }
+.MGService_OU_wrap .panel-group .panel:nth-child(even) > .panel-collapse { background-color: #f9fafc; }
+.MGService_OU_wrap .panel-group .panel .panel-heading { width: 100%; min-height: 50px; background-color: #fff; border: 1px solid #e2e7e7; margin-top: -7px; overflow: hidden; position: relative; padding: 0; }
+.MGService_OU_wrap .panel-group .panel .panel-heading h4 { position: absolute; }
+.MGService_OU_wrap .panel-group .panel .panel-heading h4 a { width: 50px; display: block; border-right: 1px solid #e2e7e7; }
+.MGService_OU_wrap .panel-group .panel .panel-heading h4 a i { font-size: 14px; color: #798792; text-align: center; line-height: 54px; margin: 0 auto; display: block; }
+.MGService_OU_wrap .panel-group .panel .panel-heading ul { width: 100%; padding: 11px 0 11px 50px; overflow: hidden; }
+.MGService_OU_wrap .panel-group .panel .panel-heading ul li.TextLeft { justify-content: flex-start; padding-left: 20px; }
+.MGService_OU_wrap .panel-group .panel .panel-heading ul li.OU_Name, .MGService_OU_wrap .panel-group .panel .panel-heading ul li.Group_Name, .MGService_OU_wrap .panel-group .panel .panel-heading ul li.Server_Qty { color: #5e5e5e; }
+.MGService_OU_wrap .panel-group .panel .panel-heading ul li { float: left; border-right: 1px solid #e2e7e7; border-left: 1px solid #e2e7e7; margin-left: -1px; font-family: Lato; font-size: 14px; color: #798792; text-align: center; position: relative; }
+.MGService_OU_wrap .panel-group .panel .panel-heading ul li .SwitchBtn { width: 50px; height: 20px; cursor: pointer; position: relative; z-index: 1; }
+.MGService_OU_wrap .panel-group .panel .panel-heading ul li .SwitchBtn .Sw_On { position: absolute; z-index: 3; }
+.MGService_OU_wrap .panel-group .panel .panel-heading ul li .SwitchBtn .Sw_Off { position: absolute; z-index: 2; }
+.MGService_OU_wrap .panel-group .panel .panel-heading ul li .SwitchBtn .Switch { width: 50px; height: 20px; border-radius: 3px; position: relative; }
+.MGService_OU_wrap .panel-group .panel .panel-heading ul li .SwitchBtn .Switch .handler { width: 25px; height: 20px; background: -webkit-linear-gradient(top, #ffffff 0%, #f6f6f6 47%, #ededed 100%); background: -moz-linear-gradient(top, #ffffff 0%, #f6f6f6 47%, #ededed 100%); background: -ms-linear-gradient(top, #ffffff 0%, #f6f6f6 47%, #ededed 100%); position: absolute; border-radius: 3px; border: 1px solid #ccc; }
+.MGService_OU_wrap .panel-group .panel .panel-heading ul li .SwitchBtn .Switch i { color: #fff; font-size: 12px; margin-top: 4px; }
+.MGService_OU_wrap .panel-group .panel .panel-heading ul li .SwitchBtn .Switch i:active { transform: translate(0, 0); background-color: transparent; box-shadow: 0 0 0px 0px #fff; border-radius: 0; }
+.MGService_OU_wrap .panel-group .panel .panel-heading ul li .SwitchBtn .SwitchOn { background-color: #33b7d8; }
+.MGService_OU_wrap .panel-group .panel .panel-heading ul li .SwitchBtn .SwitchOn i { text-align: left; margin-left: -3px; }
+.MGService_OU_wrap .panel-group .panel .panel-heading ul li .SwitchBtn .SwitchOn .handler_On { top: 0; right: 0; }
+.MGService_OU_wrap .panel-group .panel .panel-heading ul li .SwitchBtn .SwitchOff { background-color: #c8cacc; }
+.MGService_OU_wrap .panel-group .panel .panel-heading ul li .SwitchBtn .SwitchOff i { text-align: right; margin-right: 2px; font-size: 13px; }
+.MGService_OU_wrap .panel-group .panel .panel-heading ul li .SwitchBtn .SwitchOff .handler_Off { top: 0; left: 0; }
+.MGService_OU_wrap .panel-group .panel .panel-heading ul li i { width: 20px; height: 20px; font-size: 20px; cursor: pointer; margin: 0 16px; }
+.MGService_OU_wrap .panel-group .panel .panel-heading ul li i:active { transform: translate(0, 2px); background-color: #efeeee; box-shadow: 0 0 10px 4px #efeeee; border-radius: 50%; }
+.MGService_OU_wrap .panel-group .panel .panel-heading ul li:first-child { border-left: 0px solid #e2e7e7; }
+.MGService_OU_wrap .panel-group .panel .panel-heading ul li:last-child { border-right: 0px solid #e2e7e7; }
+.MGService_OU_wrap .panel-group .panel .panel-heading ul li .PowerOn { color: #98cb60; }
+.MGService_OU_wrap .panel-group .panel .panel-heading ul li .PowerOn:active { transform: translate(0, 2px); background-color: #e0f9e1; box-shadow: 0 0 10px 4px #e0f9e1; border-radius: 50%; }
+.MGService_OU_wrap .panel-group .panel .panel-heading ul li .PowerOff { color: #ed4d4d; }
+.MGService_OU_wrap .panel-group .panel .panel-heading ul li .PowerOff:active { transform: translate(0, 2px); background-color: #fbdddd; box-shadow: 0 0 10px 4px #fbdddd; border-radius: 50%; }
+.MGService_OU_wrap .panel-group .panel .panel-heading ul .AddSchedule { min-width: 27px; height: 25px; background: url("../images/add_schedule.png") center center no-repeat; cursor: pointer; }
+.MGService_OU_wrap .panel-group .panel .panel-heading ul .AddSchedule:active { transform: translate(0, 2px); }
+.MGService_OU_wrap .panel-group .panel .panel-heading ul .EditSchedule { background: url("../images/edit_schedule.png") center center no-repeat; }
+.MGService_OU_wrap .panel-group .panel .panel-collapse { background-color: #fff; margin-left: 50px; margin-right: 1px; }
+.MGService_OU_wrap .panel-group .panel .panel-collapse .panel-body { width: 100%; height: 300px; padding: 30px 40px 30px 40px; }
+.MGService_OU_wrap .panel-group .panel .panel-collapse .panel-body h2 { font-family: Lato; font-size: 13px; color: #558490; }
+.MGService_OU_wrap .panel-group .panel .panel-collapse .panel-body .loader { position: relative; }
+.MGService_OU_wrap .panel-group .panel .panel-collapse .panel-body .loader .load { top: 30%; left: 38%; position: absolute; z-index: 999; width: 100px; height: 100px; }
+.MGService_OU_wrap .panel-group .panel .panel-collapse .panel-body .loader .blur { filter: url(blur.svg#blur); /* FireFox, Chrome, Opera */ -webkit-filter: blur(1px); /* Chrome, Opera */ -moz-filter: blur(1px); -ms-filter: blur(1px); filter: blur(1px); }
+.MGService_OU_wrap .panel-group .panel .panel-collapse .panel-body .mg-updating .load { background: url("../images/updating.gif") center center no-repeat; }
+.MGService_OU_wrap .panel-group .panel .panel-collapse .panel-body .mg-loading .load { background: url("../images/loading.gif") center center no-repeat; }
+.MGService_OU_wrap .panel-group .panel .panel-collapse .panel-body .table { height: 245px; position: relative; }
+.MGService_OU_wrap .panel-group .panel .panel-collapse .panel-body .table_01 { width: 28%; float: right; }
+.MGService_OU_wrap .panel-group .panel .panel-collapse .panel-body .table_02 { width: 68%; float: left; }
+.MGService_OU_wrap .panel-group .panel .panel-collapse .panel-body .BOX { width: 100%; border: 1px solid #d1d1d1; position: relative; margin-top: 8px; }
+.MGService_OU_wrap .panel-group .panel .panel-collapse .panel-body .BOX .topnote { position: absolute; right: 5px; top: -24px; color: #798792; font-family: Arial; font-size: 13px; overflow: hidden; }
+.MGService_OU_wrap .panel-group .panel .panel-collapse .panel-body .BOX .topnote i { float: left; width: 30px; font-size: 16px; text-align: center; cursor: pointer; color: #c0c7ce; }
+.MGService_OU_wrap .panel-group .panel .panel-collapse .panel-body .BOX .topnote figure { float: right; }
+.MGService_OU_wrap .panel-group .panel .panel-collapse .panel-body .BOX ul.title { background-color: #33b7d8; line-height: 1.2; padding-right: 18px; overflow: hidden; }
+.MGService_OU_wrap .panel-group .panel .panel-collapse .panel-body .BOX ul.title li { padding: 6px 0; text-align: center; font-size: 13px; font-family: Lato; color: #fff; float: left; border-left: 1px solid #c1f1f7; }
+.MGService_OU_wrap .panel-group .panel .panel-collapse .panel-body .BOX ul.title li:first-child { border-left: 0px solid #c1f1f7; }
+.MGService_OU_wrap .panel-group .panel .panel-collapse .panel-body .BOX ul.title li.threecolumn { width: 33%; }
+.MGService_OU_wrap .panel-group .panel .panel-collapse .panel-body .BOX ul.title li.fourcolumn { width: 20%; }
+.MGService_OU_wrap .panel-group .panel .panel-collapse .panel-body .BOX ul.title li.fourcolumn:first-child { width: 40%; }
+.MGService_OU_wrap .panel-group .panel .panel-collapse .panel-body .BOX .cover { height: 180px; overflow: auto; }
+.MGService_OU_wrap .panel-group .panel .panel-collapse .panel-body .BOX .cover ul { background-color: #fff; }
+.MGService_OU_wrap .panel-group .panel .panel-collapse .panel-body .BOX .cover ul li { overflow: hidden; text-align: center; color: #798792; font-size: 12px; font-family: Arial; line-height: 24px; }
+.MGService_OU_wrap .panel-group .panel .panel-collapse .panel-body .BOX .cover ul li div { border-right: 1px solid #f3f3f3; border-bottom: 1px solid #f3f3f3; float: left; }
+.MGService_OU_wrap .panel-group .panel .panel-collapse .panel-body .BOX .cover ul li div:last-child { border-right: 0px solid #f3f3f3; }
+.MGService_OU_wrap .panel-group .panel .panel-collapse .panel-body .BOX .cover ul li .day-sheet { width: 33%; }
+.MGService_OU_wrap .panel-group .panel .panel-collapse .panel-body .BOX .cover ul li .time-sheet { width: 33%; }
+.MGService_OU_wrap .panel-group .panel .panel-collapse .panel-body .BOX .cover ul li .power-sheet { width: 34%; }
+.MGService_OU_wrap .panel-group .panel .panel-collapse .panel-body .BOX .cover ul li .Server_Name { width: 40%; }
+.MGService_OU_wrap .panel-group .panel .panel-collapse .panel-body .BOX .cover ul li .Startup_Delay { width: 20%; }
+.MGService_OU_wrap .panel-group .panel .panel-collapse .panel-body .BOX .cover ul li .Shutdown_Delay { width: 20%; }
+.MGService_OU_wrap .panel-group .panel .panel-collapse .panel-body .BOX .cover ul li .Startup_Sequence { width: 20%; }
+.MGService_OU_wrap .Group_Name { width: 40%; padding: 0 4px; }
+.MGService_OU_wrap .Server_Qty { width: 12%; }
+.MGService_OU_wrap .Status { width: 12%; }
+.MGService_OU_wrap .Power_Action { width: 12%; }
+.MGService_OU_wrap .Schedule_Setting { width: 10%; }
+.MGService_OU_wrap .Group_Setting { width: 14%; }
+.MGService_OU_wrap .toggle-handle.btn-default.btn { background: -webkit-linear-gradient(top, #ffffff 0%, #f6f6f6 47%, #ededed 100%); border: 1px solid #c8cbce; width: 50%; }
+.MGService_OU_wrap .btn-primar { background-color: #3bb1dc !important; }
+.MGService_OU_wrap .toggle.btn { min-height: 22px !important; }
+.MGService_OU_wrap .btn { line-height: 18px !important; border: 1px solid transparent !important; }
+.MGService_OU_wrap .swal2-close { display: block !important; }
+.MGService_OU_wrap .panel-default { border-color: transparent !important; }
+
+@-webkit-keyframes RedShadow { 100% { background-color: #f5e0e0; box-shadow: 0 0 10px 3px #f5e0e0; border-radius: 50%; } }
+@-webkit-keyframes GreenShadow { 100% { background-color: #dfecd0; box-shadow: 0 0 10px 3px #dfecd0; border-radius: 50%; transform: scale(1.2); } }
+@-webkit-keyframes GrayShadow { 100% { background-color: #e2e4e7; box-shadow: 0 0 10px 3px #e2e4e7; border-radius: 50%; } }
+@media screen and (max-width: 1100px) { .MGService_OU_wrap .panel-group .panel .panel-heading ul li i { margin: 0 8px; } }
+
+/*# sourceMappingURL=MGService_OU.css.map */

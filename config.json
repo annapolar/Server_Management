@@ -1,0 +1,8 @@
+{
+  "vars": {},
+  "css": [],
+  "js": [
+    "collapse.js"
+  ],
+  "customizerUrl": "http://getbootstrap.com/customize/?id=11de06037d4ef2bac217035c731e65e5"
+}

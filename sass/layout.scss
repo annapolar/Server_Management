@@ -1,0 +1,502 @@
+@font-face {
+    font-family: Lato;
+    src: url("../fonts/Lato-Regular.ttf");
+}
+
+%flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*-------------color style-------------*/
+
+$color-blue:#33b7d8;
+$color-green:#98cb60;
+$color-red:#ed4d4d;
+$color-titlegray:#558490;
+$color-textgray:#798792;
+
+/*---------------------------------------------------------------------------------*/
+
+.wrap {
+    width: 100%;
+    max-width: 1156px;
+    min-width: 760px;
+    background-color: #e9edf5;
+    padding: 10px 20px;
+    .Add {
+        // width: 188px;
+        // height: 35px;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 3px;
+        background-color: $color-green;
+        box-shadow: 0 4px #84b450;
+        color: #fff;
+        margin-bottom: 10px;
+        font: 14px/1 Lato;
+        &:active {
+            transform: translate(0, 3px);
+            box-shadow: 0 1px #84b450;
+        }
+    }
+    .titlename {
+        width: 100%;
+        background-color: #fff;
+        border: 1px solid #e2e7e7;
+        ul {
+            padding-left: 50px;
+            width: 100%;
+            overflow: hidden;
+            @extend %flex-center;
+            padding: 12px 0 15px 50px;
+            li {
+                float: left;
+                font-size: 13px;
+                font-family: Lato;
+                color: $color-titlegray;
+                text-align: center;
+                line-height: 1.2;
+            }
+        }
+    }
+    .load_wrap {
+        width: 100%;
+        height: 200px;
+        background-color: #fff;
+        @extend %flex-center;
+        .load_center {
+            width: 100px;
+            height: 100px;
+            background: url("../images/loading.gif") center center no-repeat;
+        }
+    }
+    .panel-group {
+        border-radius: 0px;
+        .panel {
+            background-color: #e9edf5;
+            border: 0px solid transparent;
+            margin-top: 0px;
+            &:nth-child(even)>.panel-heading {
+                background-color: #f9fafc;
+            }
+            &:nth-child(even)>.panel-collapse {
+                background-color: #f9fafc;
+            }
+            .panel-heading {
+                width: 100%;
+                min-height: 50px;
+                background-color: #fff;
+                border: 1px solid #e2e7e7;
+                margin-top: -7px;
+                overflow: hidden;
+                position: relative;
+                padding: 0;
+                h4 {
+                    position: absolute;
+                    a {
+                        width: 50px;
+                        display: block;
+                        border-right: 1px solid #e2e7e7;
+                        i {
+                            font-size: 14px;
+                            color: $color-textgray;
+                            text-align: center;
+                            line-height: 54px;
+                            margin: 0 auto;
+                            display: block;
+                        }
+                    }
+                }
+                ul {
+                    width: 100%;
+                    padding: 11px 0 11px 50px;
+                    overflow: hidden;
+                    @extend %flex-center;
+                    li.TextLeft {
+                        justify-content: flex-start;
+                        padding-left: 20px;
+                    }
+                    li.OU_Name,
+                    li.Group_Name,
+                    li.Server_Qty {
+                        color: #5e5e5e;
+                    }
+                    li {
+                        float: left;
+                        border-right: 1px solid #e2e7e7;
+                        border-left: 1px solid #e2e7e7;
+                        margin-left: -1px;
+                        font-family: Lato;
+                        font-size: 14px;
+                        color: $color-textgray;
+                        text-align: center;
+                        @extend %flex-center;
+                        position: relative;
+                        .SwitchBtn {
+                            width: 50px;
+                            height: 20px;
+                            cursor: pointer;
+                            position: relative;
+                            z-index: 1;
+                            .Sw_On {
+                                position: absolute;
+                                z-index: 3;
+                            }
+                            .Sw_Off {
+                                position: absolute;
+                                z-index: 2;
+                            }
+                            .Switch {
+                                width: 50px;
+                                height: 20px;
+                                border-radius: 3px;
+                                position: relative;
+                                .handler {
+                                    width: 25px;
+                                    height: 20px;
+                                    background: -webkit-linear-gradient(top, #ffffff 0%, #f6f6f6 47%, #ededed 100%);
+                                    background: -moz-linear-gradient(top, #ffffff 0%, #f6f6f6 47%, #ededed 100%);
+                                    background: -ms-linear-gradient(top, #ffffff 0%, #f6f6f6 47%, #ededed 100%);
+                                    position: absolute;
+                                    border-radius: 3px;
+                                    border: 1px solid #ccc;
+                                }
+                                i {
+                                    color: #fff;
+                                    font-size: 12px;
+                                    margin-top: 4px;
+                                    &:active {
+                                        transform: translate(0, 0);
+                                        background-color: rgba(0, 0, 0, 0);
+                                        box-shadow: 0 0 0px 0px #fff;
+                                        border-radius: 0;
+                                    }
+                                }
+                            }
+                            .SwitchOn {
+                                background-color: $color-blue;
+                                i {
+                                    text-align: left;
+                                    margin-left: -3px;
+                                }
+                                .handler_On {
+                                    top: 0;
+                                    right: 0;
+                                }
+                            }
+                            .SwitchOff {
+                                background-color: #c8cacc;
+                                i {
+                                    text-align: right;
+                                    margin-right: 2px;
+                                    font-size: 13px;
+                                }
+                                .handler_Off {
+                                    top: 0;
+                                    left: 0;
+                                }
+                            }
+                        }
+                        i {
+                            width: 20px;
+                            height: 20px;
+                            font-size: 20px;
+                            cursor: pointer;
+                            margin: 0 16px;
+                            &:active {
+                                transform: translate(0, 2px);
+                                background-color: #efeeee;
+                                box-shadow: 0 0 10px 4px #efeeee;
+                                border-radius: 50%;
+                            }
+                        }
+                        &:first-child {
+                            border-left: 0px solid #e2e7e7;
+                        }
+                        &:last-child {
+                            border-right: 0px solid #e2e7e7;
+                        }
+                        .PowerOn {
+                            color: $color-green;
+                            &:active {
+                                transform: translate(0, 2px);
+                                background-color: #e0f9e1;
+                                box-shadow: 0 0 10px 4px #e0f9e1;
+                                border-radius: 50%;
+                            }
+                        }
+                        .PowerOff {
+                            color: $color-red;
+                            &:active {
+                                transform: translate(0, 2px);
+                                background-color: #fbdddd;
+                                box-shadow: 0 0 10px 4px #fbdddd;
+                                border-radius: 50%;
+                            }
+                        }
+                    }
+                    .AddSchedule {
+                        min-width: 27px;
+                        height: 25px;
+                        background: url("../images/add_schedule.png") center center no-repeat;
+                        cursor: pointer;
+                        &:active {
+                            transform: translate(0, 2px);
+                        }
+                    }
+                    .EditSchedule {
+                        background: url("../images/edit_schedule.png") center center no-repeat;
+                    }
+                }
+            }
+            .panel-collapse {
+                background-color: #fff;
+                margin-left: 50px;
+                margin-right: 1px;
+                .panel-body {
+                    width: 100%;
+                    height: 300px;
+                    padding: 30px 40px 30px 40px;
+                    h2 {
+                        font-family: Lato;
+                        font-size: 13px;
+                        color: #558490;
+                    }
+                    //-----------------------------
+                    .loader {
+                        position: relative;
+                        .load {
+                            top: 30%;
+                            left: 38%;
+                            position: absolute;
+                            z-index: 999;
+                            width: 100px;
+                            height: 100px;
+                        }
+                        .blur {
+                            filter: url(blur.svg#blur);
+                            /* FireFox, Chrome, Opera */
+                            -webkit-filter: blur(1px);
+                            /* Chrome, Opera */
+                            -moz-filter: blur(1px);
+                            -ms-filter: blur(1px);
+                            filter: blur(1px);
+                        }
+                    }
+                    .mg-updating {
+                        .load {
+                            background: url("../images/updating.gif") center center no-repeat;
+                        }
+                    }
+                    .mg-loading {
+                        .load {
+                            background: url("../images/loading.gif") center center no-repeat;
+                        }
+                    }
+                    //--------------------------
+                    .table {
+                        height: 245px;
+                        position: relative;
+                    }
+                    .table_01 {
+                        width: 28%;
+                        float: right;
+                    }
+                    .table_02 {
+                        width: 68%;
+                        float: left;
+                    }
+                    .BOX {
+                        width: 100%;
+                        border: 1px solid #d1d1d1;
+                        position: relative;
+                        margin-top: 8px;
+                        .topnote {
+                            position: absolute;
+                            right: 5px;
+                            top: -24px;
+                            color: $color-textgray;
+                            font-family: Arial;
+                            font-size: 13px;
+                            overflow: hidden;
+                            i {
+                                float: left;
+                                width: 30px;
+                                font-size: 16px;
+                                text-align: center;
+                                cursor: pointer;
+                                color: #c0c7ce;
+                            }
+                            figure {
+                                float: right;
+                            }
+                        }
+                        ul.title {
+                            background-color: #33b7d8;
+                            line-height: 1.2;
+                            padding-right: 18px;
+                            overflow: hidden;
+                            li {
+                                padding: 6px 0;
+                                text-align: center;
+                                font-size: 13px;
+                                font-family: Lato;
+                                color: #fff;
+                                float: left;
+                                border-left: 1px solid #c1f1f7;
+                                &:first-child {
+                                    border-left: 0px solid #c1f1f7;
+                                }
+                            }
+                            li.threecolumn {
+                                width: 33%;
+                            }
+                            li.fourcolumn {
+                                width: 20%;
+                                &:first-child {
+                                    width: 40%;
+                                }
+                            }
+                        }
+                        .cover {
+                            height: 180px;
+                            overflow: auto;
+                            ul {
+                                background-color: #fff;
+                                li {
+                                    overflow: hidden;
+                                    text-align: center;
+                                    color: $color-textgray;
+                                    font-size: 12px;
+                                    font-family: Arial;
+                                    line-height: 24px;
+                                    div {
+                                        border-right: 1px solid #f3f3f3;
+                                        border-bottom: 1px solid #f3f3f3;
+                                        float: left;
+                                        &:last-child {
+                                            border-right: 0px solid #f3f3f3;
+                                        }
+                                    }
+                                    .day-sheet {
+                                        width: 33%;
+                                    }
+                                    .time-sheet {
+                                        width: 33%;
+                                    }
+                                    .power-sheet {
+                                        width: 34%;
+                                    }
+                                    .Server_Name {
+                                        width: 40%;
+                                    }
+                                    .Startup_Delay {
+                                        width: 20%;
+                                    }
+                                    .Shutdown_Delay {
+                                        width: 20%;
+                                    }
+                                    .Startup_Sequence {
+                                        width: 20%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .OU_Name {
+        width: 20%;
+        padding: 0 4px;
+    }
+    .Group_Name {
+        width: 28%;
+        padding: 0 4px;
+    }
+    .Server_Qty {
+        width: 8%;
+    }
+    .Status {
+        width: 12%;
+    }
+    .Power_Action {
+        width: 12%;
+    }
+    .Schedule_Setting {
+        width: 8%;
+    }
+    .Group_Setting {
+        width: 12%;
+    }
+    .toggle-handle.btn-default.btn {
+        background: -webkit-linear-gradient(top, #ffffff 0%, #f6f6f6 47%, #ededed 100%);
+        border: 1px solid #c8cbce;
+        width: 50%;
+    }
+    .btn-primar {
+        background-color: #3bb1dc!important;
+    }
+    .toggle.btn {
+        min-height: 22px!important;
+    }
+    .btn {
+        line-height: 18px!important;
+        border: 1px solid transparent!important;
+    }
+    .swal2-close {
+        display: block!important;
+    }
+    .panel-default {
+        border-color: rgba(0, 0, 0, 0)!important;
+    }
+}
+
+//=======================================================
+@-webkit-keyframes RedShadow {
+    100% {
+        background-color: #f5e0e0;
+        box-shadow: 0 0 10px 3px #f5e0e0;
+        border-radius: 50%;
+    }
+}
+
+@-webkit-keyframes GreenShadow {
+    100% {
+        background-color: #dfecd0;
+        box-shadow: 0 0 10px 3px #dfecd0;
+        border-radius: 50%;
+        transform: scale(1.2);
+    }
+}
+
+@-webkit-keyframes GrayShadow {
+    100% {
+        background-color: #e2e4e7;
+        box-shadow: 0 0 10px 3px #e2e4e7;
+        border-radius: 50%;
+    }
+}
+
+//=========================================================================
+@media screen and(max-width:1100px) {
+    .MGService_wrap {
+        .panel-group {
+            .panel {
+                .panel-heading {
+                    ul {
+                        li {
+                            i {
+                                margin: 0 8px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
